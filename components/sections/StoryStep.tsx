@@ -20,7 +20,7 @@ export function StoryStep({
 }) {
   const Heading = heading;
   return (
-    <div data-scene={step.scene} className="relative flex min-h-[100svh] items-end pb-24 pt-20 lg:min-h-[120vh] lg:items-center lg:py-24">
+    <div data-scene={step.scene} className="relative flex min-h-[100svh] items-end pb-24 pt-20 lg:min-h-[100vh] lg:items-center lg:py-24">
       <div className="container-x w-full">
         <div
           data-reveal

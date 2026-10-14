@@ -423,13 +423,8 @@ export type Hotspot = {
   at: Vec3;
 };
 
+/** Rótulos em linguagem simples — só aparecem quando a estrutura está em destaque. */
 export const hotspots: Hotspot[] = [
-  { key: "cuff", label: "Manguito rotador", group: "shoulder", highlight: "cuff", frame: "humerus", at: [0.2, 0.2, 0.02] },
-  { key: "acromion", label: "Acrômio", group: "shoulder", highlight: "cuff", frame: "girdle", at: [0.08, 0.47, 0.0] },
-  { key: "labrum", label: "Labrum e glenoide", group: "shoulder", highlight: "labrum", frame: "girdle", at: [GLENOID[0] + 0.02, 0.16, GLENOID[2] + 0.02] },
-  { key: "biceps", label: "Tendão do bíceps", group: "shoulder", highlight: "biceps", frame: "humerus", at: [0.12, -0.15, 0.2] },
-  { key: "lateral", label: "Epicôndilo lateral", group: "elbow", highlight: "lateral", frame: "humerus", at: [0.32, -2.9, 0.03] },
-  { key: "medial", label: "Epicôndilo medial", group: "elbow", highlight: "medial", frame: "humerus", at: [-0.29, -2.88, 0.0] },
-  { key: "olecranon", label: "Olécrano", group: "elbow", highlight: "olecranon", frame: "forearm", at: [-0.06, 0.2, -0.18] },
-  { key: "nerve", label: "Nervo ulnar", group: "elbow", highlight: "nerve", frame: "humerus", at: [-0.27, -2.75, -0.1] },
+  { key: "cuff", label: "Tendões do ombro", group: "shoulder", highlight: "cuff", frame: "humerus", at: [0.2, 0.2, 0.02] },
+  { key: "lateral", label: "Tendões do cotovelo", group: "elbow", highlight: "lateral", frame: "humerus", at: [0.32, -2.9, 0.03] },
 ];
