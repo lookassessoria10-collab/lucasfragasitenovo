@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { RevealOnScroll } from "@/components/motion/RevealOnScroll";
 import { About } from "@/components/sections/About";
-import { ArticlesTeaser } from "@/components/sections/ArticlesTeaser";
 import { Care } from "@/components/sections/Care";
 import { Contact } from "@/components/sections/Contact";
 import { ElbowStory } from "@/components/sections/ElbowStory";
@@ -17,8 +16,8 @@ export const metadata: Metadata = {
 
 /**
  * Narrativa da home:
- *   [palco 3D visível]  Hero → Ombro → Por dentro do ombro → Transição → Cotovelo → Como posso ajudar
- *   [seções sólidas]    Vou precisar operar? → Sobre → Contato → Conteúdos
+ *   Hero → Sobre → Ombro → Cotovelo → Como posso ajudar
+ *   [seções sólidas]    Vou precisar operar? → Contato
  *   [palco 3D visível]  Encerramento
  */
 export default function Home() {
@@ -29,14 +28,15 @@ export default function Home() {
       <main id="conteudo" className="relative z-10">
         <div data-stage>
           <Hero />
+        </div>
+        <About />
+        <div data-stage>
           <ShoulderStory />
           <ElbowStory />
           <Care />
         </div>
         <Surgery />
-        <About />
         <Contact />
-        <ArticlesTeaser />
         <div data-stage>
           <FinalCta />
         </div>

@@ -1,7 +1,7 @@
 import { shoulder } from "@/content/home";
 import { SectionTag, StoryStep } from "./StoryStep";
 
-/** Ombro — o problema (dor ao levantar o braço) e a causa mais comum (tendões). */
+/** Ombro — sintomas percebidos na rotina. */
 export function ShoulderStory() {
   return (
     <section id="ombro" aria-label="Dor no ombro">

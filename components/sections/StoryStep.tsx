@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import type { StoryStep as Step } from "@/content/home";
 
 /**
- * Um "passo" da narrativa guiada pelo scroll. Ocupa ~uma tela de altura e
+ * Um "passo" compacto da narrativa guiada pelo scroll que
  * ancora um keyframe do 3D (data-scene). No desktop, o texto fica à esquerda
  * e o modelo à direita; em telas compactas, o texto vira um cartão na base
  * da tela e o modelo ocupa a parte de cima.
@@ -20,7 +20,7 @@ export function StoryStep({
 }) {
   const Heading = heading;
   return (
-    <div data-scene={step.scene} className="relative flex min-h-[100svh] items-end pb-24 pt-20 lg:min-h-[100vh] lg:items-center lg:py-24">
+    <div data-scene={step.scene} className="relative flex min-h-[85svh] items-end pb-16 pt-20 lg:min-h-[75vh] lg:items-center lg:py-20">
       <div className="container-x w-full">
         <div
           data-reveal

@@ -9,7 +9,7 @@ export function FinalCta() {
     <section
       data-scene={finalCta.scene}
       aria-labelledby="final-title"
-      className="relative flex min-h-[100svh] items-end pb-28 pt-32 lg:items-center lg:pb-24"
+      className="relative flex items-center py-16 md:py-20"
     >
       <div className="container-x">
         <div data-reveal className="max-w-[40rem]">

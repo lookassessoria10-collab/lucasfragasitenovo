@@ -48,10 +48,10 @@ export function whatsappHref(message: string = site.whatsapp.message) {
 
 export const navigation = [
   { label: "Início", href: "/#inicio", id: "inicio" },
+  { label: "Sobre", href: "/#sobre", id: "sobre" },
   { label: "Ombro", href: "/#ombro", id: "ombro" },
   { label: "Cotovelo", href: "/#cotovelo", id: "cotovelo" },
   { label: "Tratamentos", href: "/#tratamentos", id: "tratamentos" },
-  { label: "Sobre", href: "/#sobre", id: "sobre" },
-  { label: "Conteúdos", href: "/#conteudos", id: "conteudos" },
+  { label: "Conteúdos", href: "/conteudos", id: "conteudos" },
   { label: "Contato", href: "/#contato", id: "contato" },
 ] as const;

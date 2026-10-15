@@ -9,7 +9,7 @@
 
 export const hero = {
   scene: "hero",
-  eyebrow: "Ortopedista de ombro e cotovelo em Salvador",
+  eyebrow: "Ortopedista de ombro e cotovelo",
   title: { lead: "Dor no ombro", accent: "ou no cotovelo?" },
   lead: "Avaliação especializada para encontrar a causa da dor e definir o melhor tratamento para você.",
   primaryCta: "Agendar consulta",
@@ -36,11 +36,6 @@ export const shoulder = {
       title: "Dói ao levantar o braço?",
       text: "Dor para pentear o cabelo, vestir uma blusa ou dormir de lado é um dos sinais mais comuns de problema no ombro.",
     },
-    {
-      scene: "anatomy-cuff",
-      title: "A causa costuma estar nos tendões.",
-      text: "Tendinite, bursite e lesões do manguito rotador estão entre as causas mais frequentes. Muitas melhoram sem cirurgia.",
-    },
   ] satisfies StoryStep[],
 };
 
@@ -51,7 +46,7 @@ export const elbow = {
     {
       scene: "elbow-flex",
       title: "Dói ao segurar objetos?",
-      text: "Dor na parte de fora do cotovelo ao abrir um pote, digitar ou carregar peso costuma ser sobrecarga nos tendões.",
+      text: "Abrir um pote, digitar ou carregar uma sacola ficou desconfortável? Na consulta, vamos entender sua dor e como ela afeta sua rotina.",
     },
   ] satisfies StoryStep[],
 };
