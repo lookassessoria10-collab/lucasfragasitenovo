@@ -9,6 +9,9 @@ import { Button } from "@/components/ui/Button";
 import { ArrowRight, WhatsApp } from "@/components/ui/icons";
 import { articleJsonLd, jsonLdScript } from "@/lib/seo";
 
+/** Exportação estática: só existem os artigos listados (antigos do WordPress → `public/.htaccess`). */
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return articles.map((a) => ({ slug: a.slug }));
 }

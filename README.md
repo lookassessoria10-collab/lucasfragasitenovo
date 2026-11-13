@@ -19,11 +19,15 @@ Three.js · React Three Fiber · Drei · GSAP + ScrollTrigger
 ```bash
 npm install
 npm run dev        # http://localhost:3000
-npm run build && npm start
+npm run build      # gera o site estático em out/
 ```
 
-**Deploy na Vercel:** importe o repositório — nenhuma configuração extra é necessária
-(todas as páginas são estáticas). Depois do deploy, aponte o domínio `drlucasfraga.com.br`.
+**Deploy na Hostinger (Site PHP/HTML):** o projeto é exportado como site estático
+(`output: "export"` no `next.config.ts`). Rode `npm run build` e envie **todo o conteúdo**
+da pasta `out/` para o `public_html` — inclusive o arquivo oculto `.htaccess`, que faz
+HTTPS, os redirecionamentos do site antigo (WordPress) e a página 404.
+
+**Deploy na Vercel:** também funciona — importe o repositório, sem configuração extra.
 
 ---
 

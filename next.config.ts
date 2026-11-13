@@ -1,21 +1,17 @@
 import type { NextConfig } from "next";
 
+/**
+ * Exportação estática (pasta `out/`) para hospedagem comum (Hostinger, Apache/LiteSpeed).
+ * - `trailingSlash`: gera `pasta/index.html`, que qualquer servidor serve sem configuração.
+ * - `images.unoptimized`: sem servidor Node não há otimização de imagem sob demanda.
+ * - Redirecionamentos do site anterior (WordPress) ficam em `public/.htaccess`,
+ *   pois `redirects()` não funciona em exportação estática.
+ */
 const nextConfig: NextConfig = {
+  output: "export",
+  trailingSlash: true,
   images: {
-    formats: ["image/avif", "image/webp"],
-  },
-  /** Endereços do site anterior (WordPress) → novas seções. Preserva links e SEO. */
-  async redirects() {
-    return [
-      { source: "/sobre-mim", destination: "/#sobre", permanent: true },
-      { source: "/dor-no-ombro-e-cotovelo", destination: "/#ombro", permanent: true },
-      { source: "/locais-de-atendimento", destination: "/#contato", permanent: true },
-      { source: "/fale-conosco", destination: "/#contato", permanent: true },
-      { source: "/blog", destination: "/conteudos", permanent: true },
-      { source: "/blog/page/:n", destination: "/conteudos", permanent: true },
-      { source: "/conteudos/author/:name", destination: "/conteudos", permanent: true },
-      { source: "/feed", destination: "/conteudos", permanent: false },
-    ];
+    unoptimized: true,
   },
 };
 
